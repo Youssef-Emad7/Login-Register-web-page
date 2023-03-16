@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login and Registration Form </title>
+    <link rel="stylesheet" href="E:\Projects\front\CSS\style.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input class="username first" type="text" required>
+                    <label for="">First Name</label>
+                    <input class="username last" type="text" required>
+                    <label class="last" for="">Last name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input id="password-copy" type="password" required>
+                    <label for="">Password</label>
+                    <img onclick="showCopy()" id="image-copy" src="E:/Projects/front/Images/hide copy.png" width="32">
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="sign-link">
+                    <p>Already have an account? <a href="#" class="signIn-link">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input id="password" type="password" required>
+                    <label for="">Password</label>
+                    <img onclick="show()" id="image" src="E:/Projects/front/Images/hide copy.png" width="32">
+                </div>
+                <div class="select">
+                    <select name="roles" id="roles">
+                        <option disabled selected>Select Role</option>
+                        <option value="1">Admin</option>
+                        <option value="2">Head</option>
+                        <option value="2">Vice Head</option>
+                        <option value="3">Member</option>
+                    </select>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="sign-link">
+                    <p>Don't have an account? <a href="#" class="signUp-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="E:\Projects\front\JS\script.js"></script>
+    <script src="E:\Projects\front\JS\jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
